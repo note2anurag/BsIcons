@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSicons Drag N Drop</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/521/fabric.min.js" integrity="sha512-nPzvcIhv7AtvjpNcnbr86eT6zGtiudLiLyVssCWLmvQHgR95VvkLX8mMpqNKWs1TG3Hnf+tvHpnGmpPS3yJIgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/521/fabric.js" integrity="sha512-H2reaY28wpUIX1EKG6WufGHYG/BWvZUfweOdvFB/gW9kh9YSKB9EklGSlIB+XdL0bgavEbp4l+UjQR/mLJwdMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="img_cont">
+        <img class="img" id="ele1" alt='' draggable="true" ondragstart="dragElement(event)" src="/images/icon1.png"> 
+        <img class="img" id="ele2" alt='' draggable="true" ondragstart="dragElement(event)" src="/images/icon2.png"> 
+        <img class="img" id="ele3" alt='' draggable="true" ondragstart="dragElement(event)" src="/images/icon3.png"> 
+        <img class="img" id="ele4" alt='' draggable="true" ondragstart="dragElement(event)" src="/images/icon4.png"> 
+        <img class="img" id="ele5" alt='' draggable="true" ondragstart="dragElement(event)" src="/images/icon5.png"> 
+    </div>
+    <hr>
+    <div id="wrapper" ondragover="allowDrop(event)" ondrop="dropElement(event)">
+        <canvas id="canvas" width="950" height="550" ></canvas>
+    </div>
+</body>
+</html>
